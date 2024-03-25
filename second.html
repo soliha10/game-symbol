@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./index.html">
+  <link rel="stylesheet" href="./main.css">
+  <title> Exam - 2 || Road Signs</title>
+</head>
+
+<body>
+
+
+  <!-- Your Code Here -->
+  <main>
+
+
+    <section class="second-page  ">
+      <div class="container w-[1240px] px-[20px] mx-auto">
+        <div class="second-inner flex flex-col justify-center items-center h-[100vh]">
+          <form class="js-form flex flex-col justify-center items-center text-white " method="POST">
+
+            <label class="text-[20px] mb-2" for="">Level</label>
+            <select class=" js-level bg-transparent text-center underline p-3 text-[23px] mb-10" required>
+              <option class="text-black" value="easy">Easy</option>
+              <option class="text-black" value="medium">Medium</option>
+              <option class="text-black" value="hard">Hard</option>
+            </select>
+
+            <label class="text-[20px] mb-2" for="">Time</label>
+            <select class="js-total-time bg-transparent text-center underline p-3 text-[23px] mb-10">
+              <option class="text-black" value="3">3 min</option>
+              <option class="text-black" value="5">5 min</option>
+              <option class="text-black" value="8">8 min</option>
+            </select>
+
+            <button class="bg-white text-black p-3 text-[25px] w-[200px] font-bold rounded-[20px]"
+              type="submit">Start</button>
+
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="test-page mt-[100px] hidden bg-red-700" >
+      <div class="container w-[1240px] px-[20px] mx-auto ">
+        <div class="test-inner">
+          <div class="test-head flex justify-between items-center mb-7">
+
+            <div class="score text-white ">
+              <strong class="">Score</strong>
+              <span class="js-res-score font-bold mr-2 "></span>
+              <span class="js-true-score font-bold mr-2"></span>
+              <span class="js-false-score font-bold mr-2"></span>
+
+            </div>
+
+            <div class="time text-white">
+              <strong>Time</strong>
+              <span class="js-time"></span>
+            </div>
+          </div>
+
+          <h2 class="js-test-question text-white bg-gray-400 mb-3 py-8 text-center font-bold text-[25px]"></h2>
+          <ul class="js-test-list flex justify-between flex-wrap bg-gray-400 "></ul>
+        </div>
+      </div>
+
+    </section>
+
+    <template class="js-test-template">
+      <li class="js-test-item w-[190px] mt-3 p-2 bg-gray-500 hover:bg-gray-600 transition-[0.3s] h-[200px]">
+
+          <img class="js-test-img h-[180px]" src="" alt="" width="180" >
+      </li>
+
+    </template>
+  </main>
+
+
+
+
+  <!-- Kerakli Array shu fileda -->
+  <script src="./signs.js"></script>
+
+  <!-- Code yoziladigan js file shu -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
